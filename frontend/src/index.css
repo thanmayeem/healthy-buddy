@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-[#e3d6f3] to-[#cbeafe] text-gray-900;
+  font-family: 'Inter', sans-serif;
+}
+
+.bubble {
+  animation: bubbleIn 0.4s ease forwards;
+}
+
+@keyframes bubbleIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
